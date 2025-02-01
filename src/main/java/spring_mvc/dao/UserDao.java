@@ -6,7 +6,7 @@ import org.springframework.orm.hibernate5.HibernateTemplate;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import spring_mvc.model.User;
+import spring_mvc.entity.User;
 
 @Repository
 public class UserDao {

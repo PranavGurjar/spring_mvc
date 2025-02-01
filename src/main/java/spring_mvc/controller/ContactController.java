@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import spring_mvc.model.User;
+import spring_mvc.entity.User;
 import spring_mvc.service.UserService;
 
 import javax.servlet.http.HttpServletRequest;
@@ -71,6 +71,15 @@ public class ContactController {
 //		model.addAttribute("Desc", "Home For Programmer");
 		System.out.println("Form Submitted!");
 		System.out.println(user);	
+		
+		
+		if(user.getUname().isBlank()) {
+			return "redirect:/contact";
+		}
+			
+			
+			
+			
 		int createUser = this.userService.createUser(user);
 		model.addAttribute("msg", "User created with id : "+createUser);
 		return "success";

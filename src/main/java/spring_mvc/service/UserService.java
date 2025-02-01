@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import spring_mvc.dao.UserDao;
-import spring_mvc.model.User;
+import spring_mvc.entity.User;
 
 @Service
 public class UserService {
