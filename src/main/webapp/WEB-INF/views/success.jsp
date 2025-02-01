@@ -10,6 +10,7 @@
 <body>
 	<h1>${Header}</h1>
 	<p>${Desc}</p>
+	<h1 style="color: green">${msg}</h1>
 	<hr>
 	
 	<%-- <h1>Welcome, ${uname} </h1>
